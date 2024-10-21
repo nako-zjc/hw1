@@ -4,19 +4,54 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>台中市景點推薦</title>
 	<style>
 	#container{margin: 0 auto;width: 1024px;}
 	td{text-align: center;padding: 10px;}
 	.img_rounded{border-radius: 50%;width: 300px;height: 300px;}
 	.img_banner{border-radius: 10px;}
+	iframe{border-radius: 20px;}
 	.font1{font-size: 40px;}
 	.font2{font-size: 30px;}
 	.img_rounded:hover{rotate: -5deg;opacity: 70%;}
 	.font2:hover{background-color: black;color: white;}
+
+	.navbar {
+	  overflow: hidden;
+	  background-color: #333;
+	  position: fixed;
+	  top: 0;
+	  width: 100%;
+	}
+
+	.navbar a {
+	  float: left;
+	  display: block;
+	  color: #f2f2f2;
+	  text-align: center;
+	  padding: 14px 16px;
+	  text-decoration: none;
+	  font-size: 17px;
+	}
+
+	.navbar a:hover {
+	  background: #ddd;
+	  color: black;
+	}
+
 	</style>
 </head>
 <body>
+	<div class="navbar">
+	  <a href="#s0">回首頁</a>
+	  <a href="#s1">台中國家歌劇院</a>
+	  <a href="#s2">臺中州廳</a>
+	  <a href="#s3">審計新村</a>
+	</div>
+	
+	<div id="s0"></div>
+	<br>
+	<br>
 	<div id=container>
 	<table>
 		<tr>
@@ -34,7 +69,7 @@
 			</td>
 		</tr>
 		<tr>
-			<td><IMG class="img_rounded" SRC="01.jpeg">
+			<td><IMG id="s1" class="img_rounded" SRC="01.jpeg">
 			</td>
 			<td>
 				<font class="font2">台中國家歌劇院</font><BR>
@@ -54,12 +89,12 @@
 				所在位置：台中市西區民權路99號
 			</P>
 			</td>
-			<td><IMG class="img_rounded" SRC="02.jpeg">
+			<td><IMG id="s2" class="img_rounded" SRC="02.jpeg">
 			</td>
 		</tr>
 		<tr>
 			<td>
-				<IMG class="img_rounded" SRC="03.jpeg">
+				<IMG id="s3" class="img_rounded" SRC="03.jpeg">
 			</td>
 			<td>
 				<font class="font2">審計新村</font><br>
@@ -70,9 +105,16 @@
 				</P>
 			</td>
 		</tr>
+
 		<tr>
 			<td colspan="2">
-				大傳三A-張倞慈
+				<iframe frameborder="0" src="https://www.google.com/maps/d/embed?mid=1s1qzV8tvgOG3Xxmmpic5Kqws-LsLWNI&ehbc=2E312F" width="1024" height="800"></iframe>
+			</td>
+		</tr>
+
+		<tr>
+			<td height=50px bgcolor="black" colspan="2">
+				<font color="white">大傳三A 張倞慈 製作</font>
 			</td>
 		</tr>
 	</table>
